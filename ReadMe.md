@@ -16,6 +16,12 @@ Create .gitignore file in server folder and add .env
 connect to mongodb atlas
 
 
-Login Signup and  OTP System 
+Login Signup and  OTP System (Authentication (check Identity) or Basic Authorization (permission if it is user or admin))
 
 Make login signup otp function  (auth.js giving routes, authController doing actual function or work , OTP Schema, User Schema).
+
+
+Middleware means: a checking/processing function that runs before the main function.
+Make Middleware which checks if user is login or role has admin in middleware file
+
+Create Events (Event Schema ,Event Routes, Event Controller (by using middleware functions)) 
