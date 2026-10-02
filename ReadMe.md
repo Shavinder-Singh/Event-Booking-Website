@@ -25,3 +25,7 @@ Middleware means: a checking/processing function that runs before the main funct
 Make Middleware which checks if user is login or role has admin in middleware file
 
 Create Events (Event Schema ,Event Routes, Event Controller (by using middleware functions)) 
+
+Create Bookings (Booking Schema, Booking Routes, Booking Controller,Otp verification with booking system ) 
+
+Make Seed File for fake data And Checking

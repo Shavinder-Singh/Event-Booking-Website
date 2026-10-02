@@ -2,7 +2,7 @@ const Event = require('../models/Event');
 
 
 //Get all events
-exports.getAllEvents = async (req, res) => {
+exports.getEvents = async (req, res) => {
     try {
         const filters = {};
         if (req.query.category) {

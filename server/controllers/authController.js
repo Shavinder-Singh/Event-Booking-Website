@@ -5,12 +5,15 @@ const jwt = require('jsonwebtoken');
 const { sendOTPEmail } = require('../utils/email');
 
 
+const generateOTP = () => {
+    return Math.floor(100000 + Math.random() * 900000).toString();
+};
 const generateToken = (id, role) => {
     return jwt.sign({ id, role }, process.env.JWT_SECRET, { expiresIn: '1h' });
 }
 exports.register = async (req, res) => {
     try {
-        const { name, email, password, role } = req.body;
+        const { name, email, password } = req.body;
         let user = await User.findOne({ email });
         if (user) return res.status(400).json({ message: 'User already exists' });
 
