@@ -11,6 +11,8 @@ const generateOTP = () => {
 const generateToken = (id, role) => {
     return jwt.sign({ id, role }, process.env.JWT_SECRET, { expiresIn: '1h' });
 }
+
+
 exports.register = async (req, res) => {
     try {
         const { name, email, password } = req.body;

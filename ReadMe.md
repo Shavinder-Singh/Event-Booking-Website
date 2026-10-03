@@ -29,3 +29,5 @@ Create Events (Event Schema ,Event Routes, Event Controller (by using middleware
 Create Bookings (Booking Schema, Booking Routes, Booking Controller,Otp verification with booking system ) 
 
 Make Seed File for fake data And Checking
+
+Frontend Part Make
